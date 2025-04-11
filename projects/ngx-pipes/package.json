@@ -1,0 +1,19 @@
+{
+  "name": "ngx-pipes",
+  "version": "0.0.1",
+  "description": "Angular pipe examples for your everyday projects, supporting NgModule and standalone.",
+  "keywords": ["angular", "pipes", "standalone"],
+  "author": {
+    "name": "Mofiro Jean",
+    "email": "mofirojean@gmail.com"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^19.1.0",
+    "@angular/core": "^19.1.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

@@ -1,0 +1,38 @@
+<div class="w-[40rem] flex flex-col gap-4 bg-white p-8 rounded-3xl shadow-[5px_20px_100px_10px_#00000024]">
+    <div class="flex font-light gap-8 items-center">
+        <!-- <ng-icon hlm class="text-slate-400" name="lucideGripVertical" /> -->
+        <div class="border-b-2 cursor-pointer border-slate-900 pb-2">Description</div>
+        <div class="border-b-2 cursor-pointer border-transparent text-slate-400 pb-2">User Stories</div>
+        <div class="border-b-2 cursor-pointer border-transparent text-slate-400 pb-2">Bugs</div>
+        <div class="border-b-2 cursor-pointer border-transparent text-slate-400 pb-2">Relations</div>
+    </div>
+    <div class="h-[6rem] font-light">
+        <textarea [(ngModel)]="message" class="h-full text-[20px] resize-none placeholder:text-[16px] border-none active:border-none focus:border-none px-0 py-2 w-full focus-visible:ring-0" hlmInput placeholder="Message..."></textarea> 
+    </div>
+    <div class="flex font-light gap-8 justify-between items-center">
+        <div class="flex items-center gap-6">
+            <div class="flex text-slate-500 cursor-pointer hover:text-slate-900 items-center gap-2">
+                <span>Inter</span>
+                <ng-icon hlm size="sm" name="lucideChevronDown" />
+            </div>
+            <div class="flex text-slate-500 cursor-pointer hover:text-slate-900 items-center gap-2">
+                <span>14px</span>
+                <ng-icon hlm size="sm" name="lucideChevronDown" />
+            </div>
+            <div class="flex text-slate-500 items-center gap-4">
+                <ng-icon hlm size="sm" name="lucideBold" />
+                <ng-icon hlm size="sm" name="lucideItalic" />
+                <ng-icon hlm size="sm" name="lucideUnderline" />
+            </div>
+            <div class="flex text-slate-500 items-center gap-4">
+                <ng-icon hlm class="text-slate-900" size="sm" name="lucideAlignLeft" />
+                <ng-icon hlm size="sm" name="lucideAlignCenter" />
+                <ng-icon hlm size="sm" name="lucideAlignRight" />
+            </div>
+        </div>
+        <div class="flex justify-center items-center gap-4">
+            <span class="text-sm text-slate-500">150/300</span>
+            <button class="rounded-full" hlmBtn>Submit</button>
+        </div>
+    </div>
+</div>
