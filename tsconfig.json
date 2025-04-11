@@ -16,17 +16,23 @@
     "target": "ES2022",
     "module": "ES2022",
     "paths": {
+      "@spartan-ng/ui-button-helm": [
+        "./components/ui/ui-button-helm/src/index.ts"
+      ],
+      "@spartan-ng/ui-icon-helm": [
+        "./components/ui/ui-icon-helm/src/index.ts"
+      ],
       "@spartan-ng/ui-input-helm": [
         "./components/ui/ui-input-helm/src/index.ts"
       ],
       "@spartan-ng/ui-formfield-helm": [
         "./components/ui/ui-formfield-helm/src/index.ts"
       ],
-      "@spartan-ng/ui-button-helm": [
-        "./components/ui/ui-button-helm/src/index.ts"
+      "@spartan-ng/ui-togglegroup-helm": [
+        "./components/ui/ui-togglegroup-helm/src/index.ts"
       ],
-      "@spartan-ng/ui-icon-helm": [
-        "./components/ui/ui-icon-helm/src/index.ts"
+      "ngx-pipes": [
+        "./dist/ngx-pipes"
       ]
     }
   },
