@@ -4,10 +4,18 @@ import { NgIcon } from '@ng-icons/core';
 import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
 import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
 import { HlmInputDirective } from '@spartan-ng/ui-input-helm';
+import { CountPipe } from 'ngx-pipes';
 
 @Component({
   selector: 'app-word-editor-count',
-  imports: [NgIcon, HlmIconDirective, HlmInputDirective, HlmButtonDirective, FormsModule],
+  imports: [
+    NgIcon, 
+    HlmIconDirective, 
+    HlmInputDirective, 
+    HlmButtonDirective, 
+    FormsModule,
+    CountPipe
+  ],
   templateUrl: './word-editor-count.component.html',
   styles: ``
 })
