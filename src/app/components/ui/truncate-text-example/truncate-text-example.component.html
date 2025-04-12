@@ -1,0 +1,34 @@
+<div class="w-full md:w-[30rem] border-[1px] border-slate-100 flex flex-col gap-4 bg-white p-8 rounded-3xl shadow-[5px_20px_100px_10px_#00000024]">
+    <h1 class="text-xl font-semibold">Share</h1>
+    <div class="bg-gray-300/50 p-2 flex items-center gap-2 rounded-xl">
+        <div class="p-2 shadow-[0px_10px_50px_-3px_rgba(0,_0,_0,_0.1)] bg-white rounded-xl flex justify-center w-fit">
+            <ng-icon hlm size="lg" class="text-slate-400" name="heroGlobeAlt" />
+        </div>
+        <div class="flex flex-col">
+            <span class="font-semibold text-slate-600">Anyone</span>
+            <span class="text-slate-400">Anyone with link can access</span>
+        </div>
+        <div class="ml-auto flex justify-center">
+            <hlm-switch [formControl]="toggle" />
+        </div>
+    </div>
+    <div class="flex px-2 text-slate-400 justify-between items-center gap-4">
+        <span class="text-sm">{{ url() | truncate:45 }}</span>
+        <div class="hover:bg-gray-200 p-1 flex justify-center items-center rounded-md">
+            <ng-icon hlm class="cursor-pointer" (click)="onCopy()" [name]="copiedIcon()" />
+        </div>
+    </div>
+    @if (!toggle.value) {
+        <div @animateInvite class="flex flex-col w-full gap-2">
+            <h2 class="text-[18px] text-slate-500">Invite</h2>
+            <div class='flex items-center border rounded-xl p-1 w-full gap-2'>
+                <div class="flex text-slate-400"><ng-icon hlm class="cursor-pointer w-10 ml-1" name="heroUserPlus" /></div>
+                <input aria-label='Email' class='w-full px-1 rounded-none placeholder:text-slate-500 border-none active:border-none focus:border-none focus-visible:ring-0' hlmInput type='email' placeholder='Enter email to share' />
+                <button class="rounded-xl space-x-2" hlmBtn>
+                    <ng-icon hlm size="sm" class="cursor-pointer" name="heroPaperAirplaneSolid" />
+                    <span>Invite</span> 
+                </button>
+              </div>
+        </div>
+    }
+</div>

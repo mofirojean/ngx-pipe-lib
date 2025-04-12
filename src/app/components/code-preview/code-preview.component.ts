@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { NgIcon } from '@ng-icons/core';
-import {HlmButtonDirective} from '@spartan-ng/ui-button-helm';
 import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
-import { WordEditorCountComponent } from '../ui/word-editor-count/word-editor-count.component';
+import { TruncateTextExampleComponent } from '../ui/truncate-text-example/truncate-text-example.component';
 
 @Component({
   selector: 'app-code-preview',
-  imports: [NgIcon, HlmIconDirective, WordEditorCountComponent],
+  imports: [NgIcon, HlmIconDirective, TruncateTextExampleComponent],
   templateUrl: './code-preview.component.html',
   styles: `
     .dot {

@@ -33,6 +33,12 @@
       ],
       "ngx-pipes": [
         "./dist/ngx-pipes"
+      ],
+      "@spartan-ng/ui-switch-helm": [
+        "./components/ui/ui-switch-helm/src/index.ts"
+      ],
+      "@spartan-ng/ui-label-helm": [
+        "./components/ui/ui-label-helm/src/index.ts"
       ]
     }
   },
