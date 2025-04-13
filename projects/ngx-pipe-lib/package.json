@@ -1,5 +1,5 @@
 {
-  "name": "ngx-pipes",
+  "name": "ngx-pipe-lib",
   "version": "0.0.1",
   "description": "Angular pipe examples for your everyday projects, supporting NgModule and standalone.",
   "keywords": ["angular", "pipes", "standalone"],
