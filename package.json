@@ -27,6 +27,8 @@
     "@spartan-ng/ui-button-helm": "^0.0.1-alpha.357",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "ngx-markdown": "^19.1.1",
+    "ngx-scrollbar": ">=16.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"

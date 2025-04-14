@@ -1,0 +1,35 @@
+<div class="w-full lg:w-[30rem] flex flex-col gap-1 shadow-[5px_20px_100px_10px_#00000024]">
+    <div class="w-full flex items-center justify-between bg-white p-3 border-[1px] border-slate-200 rounded-b-sm rounded-t-xl">
+        <div class="flex items-center justify-center gap-1">
+            <ng-icon hlm name="heroDocumentText"/>
+            <span class="font-semibold text-lg">OpenReader</span>
+        </div>
+        <div class="flex justify-center items-center">
+            <div class="relative w-full max-w-sm">
+                <div class="absolute left-3 top-1/2 -translate-y-1/2 flex items-center justify-center pointer-events-none">
+                    <ng-icon
+                        name="heroMagnifyingGlass"
+                        size="sm"
+                        hlm
+                        class="h-3 w-3 text-muted-foreground"
+                        aria-hidden="true"
+                        />
+                </div>
+                <input
+                    aria-label='Search'
+                    [(ngModel)]="searchTerm"
+                    hlmInput
+                    type='search'
+                    placeholder='Search'
+                    class="w-full pl-10"
+                    />
+            </div>
+        </div>
+    </div>
+    <ng-scrollbar hlm class="h-72 py-4 px-6 flex w-full rounded-b-xl rounded-t-sm bg-white border-[1px] border-slate-200">
+        <div class="flex flex-col items-center gap-4">
+            <h1 class="text-center font-bold text-xl">Exploring Modern Web Development with JavaScript and Angular</h1>
+            <p class="text-sm" [innerHTML]="longTextContent | highlight:searchTerm"></p>
+        </div>
+    </ng-scrollbar>
+</div>

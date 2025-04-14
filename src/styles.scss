@@ -61,3 +61,11 @@
     @apply border-border;
   }
 }
+
+.highlight {
+  display: inline-flex;
+  background-color: #475569;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 400;
+}

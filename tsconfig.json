@@ -39,6 +39,9 @@
       ],
       "@spartan-ng/ui-label-helm": [
         "./components/ui/ui-label-helm/src/index.ts"
+      ],
+      "@spartan-ng/ui-scrollarea-helm": [
+        "./components/ui/ui-scrollarea-helm/src/index.ts"
       ]
     }
   },

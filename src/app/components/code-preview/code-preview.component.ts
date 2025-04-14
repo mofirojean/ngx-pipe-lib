@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { NgIcon } from '@ng-icons/core';
 import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
-import { TruncateTextExampleComponent } from '../ui/truncate-text-example/truncate-text-example.component';
 import { PipePreviewComponent } from '../pipe-preview/pipe-preview.component';
+import { HightlightTextComponent } from '../ui/hightlight-text/hightlight-text.component';
 
 @Component({
   selector: 'app-code-preview',
   imports: [
     NgIcon, 
     HlmIconDirective, 
-    TruncateTextExampleComponent, 
-    PipePreviewComponent
+    HightlightTextComponent, 
+    // PipePreviewComponent
   ],
   templateUrl: './code-preview.component.html',
   styles: `
