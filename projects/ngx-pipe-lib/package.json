@@ -16,5 +16,8 @@
     "tslib": "^2.3.0",
     "qrcode": "^1.5.4"
   },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.5"
+  },
   "sideEffects": false
 }

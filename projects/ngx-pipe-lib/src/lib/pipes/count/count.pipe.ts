@@ -20,7 +20,8 @@ type CountType = 'words' | 'chars';
  * {{ undefined | count }} // Returns 0
  */
 @Pipe({
-  name: 'count'
+  name: 'count',
+  standalone: true
 })
 export class CountPipe implements PipeTransform {
 

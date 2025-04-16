@@ -20,7 +20,8 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
  * {{ undefined | highlight: 'test' }} // Returns ''
  */
 @Pipe({
-  name: 'highlight'
+  name: 'highlight',
+  standalone: true
 })
 export class HighlightPipe implements PipeTransform {
   constructor(private sanitizer: DomSanitizer) {}
