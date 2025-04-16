@@ -5,7 +5,7 @@ import { TruncatePipe } from './pipes/truncate/truncate.pipe';
 import { HighlightPipe } from './pipes/highlight/highlight.pipe';
 import { EmailMaskPipe } from './pipes/email-mask/email-mask.pipe';
 import { JsonPrettyPipe } from './pipes/json-pretty/json-pretty.pipe';
-import { QrCodePipe } from './pipes/qr-code/qr-code.pipe';
+import { QRCodePipe } from './pipes/qr-code/qr-code.pipe';
 
 
 @NgModule({
@@ -16,7 +16,7 @@ import { QrCodePipe } from './pipes/qr-code/qr-code.pipe';
     HighlightPipe,
     EmailMaskPipe,
     JsonPrettyPipe,
-    QrCodePipe
+    QRCodePipe
   ],
   exports: [
     CountPipe,
@@ -24,7 +24,7 @@ import { QrCodePipe } from './pipes/qr-code/qr-code.pipe';
     HighlightPipe,
     EmailMaskPipe,
     JsonPrettyPipe,
-    QrCodePipe
+    QRCodePipe
   ]
 })
 export class NgxPipeLibModule { }

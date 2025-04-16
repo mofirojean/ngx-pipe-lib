@@ -1,0 +1,33 @@
+<div
+    class="w-full border-border border-[1px] lg:w-[30rem] shadow-[5px_20px_100px_10px_#00000024] flex flex-col items-center justify-center gap-6 px-10 py-8 rounded-3xl bg-white">
+    <div class="flex flex-col justify-center items-center">
+        <h1 class="text-2xl font-bold">Generate QRCode (Using Pipe)</h1>
+        <p class="text-slate-500">Enter a URL and click Generate.</p>
+    </div>
+
+    <div class="flex w-full gap-2">
+        <input aria-label='Url' [formControl]="requestUrl" hlmInput class="w-full rounded-xl" type='text'
+            placeholder='e.g., https://google.com' />
+        <button (click)="generateQrCode()" class="flex items-center gap-2 rounded-xl" hlmBtn type="button" [disabled]="requestUrl.invalid || isGenerating()">
+           <ng-icon hlm size="sm" name="heroQrCode"></ng-icon>
+           <span>{{ isGenerating() ? 'Processing...' : 'Generate' }}</span>
+        </button>
+    </div>
+
+    <div class="h-[220px] w-full flex items-center justify-center">
+        @if (displayQrCode()) {
+            <div class="flex flex-col items-center gap-4">
+                <div class="bg-gradient-to-t from-purple-700 to-orange-500 p-6 rounded-2xl qr-display-container">
+                    <div [innerHTML]="urlToEncode() | qrCode:qrDisplayOptions | async"></div>
+                </div>
+                <button (click)="downloadQrCode()" hlmBtn class="rounded-xl flex items-center justify-center gap-2" variant="outline" [disabled]="isDownloading()">
+                    <ng-icon hlm size="sm" name="heroArrowDownTray"></ng-icon>
+                    <span>{{ isDownloading() ? 'Downloading...' : 'Download' }}</span>
+                </button>
+            </div>
+        } @else {
+            <div class="text-slate-400 h-full w-full flex justify-center items-center rounded-2xl border-[5px] border-dashed">
+                QR Code <ng-icon hlm size="lg" class="ml-4" name="heroQrCode"></ng-icon>
+            </div> }
+    </div>
+</div>

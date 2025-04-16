@@ -4,7 +4,7 @@ import { TruncatePipe } from "./pipes/truncate/truncate.pipe";
 import { HighlightPipe } from "./pipes/highlight/highlight.pipe";
 import { EmailMaskPipe } from "./pipes/email-mask/email-mask.pipe";
 import { JsonPrettyPipe } from "./pipes/json-pretty/json-pretty.pipe";
-import { QrCodePipe } from "./pipes/qr-code/qr-code.pipe";
+import { QRCodePipe } from "./pipes/qr-code/qr-code.pipe";
 
 export function provideNgxPipeLib(): Provider[] {
     return [
@@ -13,6 +13,6 @@ export function provideNgxPipeLib(): Provider[] {
         HighlightPipe,
         EmailMaskPipe,
         JsonPrettyPipe,
-        QrCodePipe,
+        QRCodePipe,
     ]
 }

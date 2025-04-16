@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import { NgIcon } from '@ng-icons/core';
 import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
 import { PipePreviewComponent } from '../pipe-preview/pipe-preview.component';
-import { ResetPasswordMaskComponent } from '../ui/reset-password-mask/reset-password-mask.component';
+import { QrCodeExampleComponent } from '../ui/qr-code-example/qr-code-example.component';
 
 @Component({
   selector: 'app-code-preview',
   imports: [
     NgIcon, 
     HlmIconDirective, 
-    ResetPasswordMaskComponent, 
+    QrCodeExampleComponent, 
     // PipePreviewComponent
   ],
   templateUrl: './code-preview.component.html',
