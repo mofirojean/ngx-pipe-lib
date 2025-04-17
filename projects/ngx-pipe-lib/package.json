@@ -10,11 +10,11 @@
   "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^19.1.0",
-    "@angular/core": "^19.1.0"
+    "@angular/core": "^19.1.0",
+    "qrcode": "^1.5.4"
   },
   "dependencies": {
-    "tslib": "^2.3.0",
-    "qrcode": "^1.5.4"
+    "tslib": "^2.3.0"
   },
   "devDependencies": {
     "@types/qrcode": "^1.5.5"

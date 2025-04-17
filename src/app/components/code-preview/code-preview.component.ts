@@ -1,16 +1,14 @@
 import { Component } from '@angular/core';
 import { NgIcon } from '@ng-icons/core';
 import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
-import { PipePreviewComponent } from '../pipe-preview/pipe-preview.component';
-import { QrCodeExampleComponent } from '../ui/qr-code-example/qr-code-example.component';
+import { CreditCardMaskComponent } from '../ui/credit-card-mask/credit-card-mask.component';
 
 @Component({
   selector: 'app-code-preview',
   imports: [
     NgIcon, 
-    HlmIconDirective, 
-    QrCodeExampleComponent, 
-    // PipePreviewComponent
+    HlmIconDirective,
+    CreditCardMaskComponent
   ],
   templateUrl: './code-preview.component.html',
   styles: `

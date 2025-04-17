@@ -18,6 +18,8 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
  * {{ 'This is a test string' | highlight: '' }} // Returns 'This is a test string'
  * {{ null | highlight: 'test' }} // Returns ''
  * {{ undefined | highlight: 'test' }} // Returns ''
+ * 
+ * @author Mofiro Jean
  */
 @Pipe({
   name: 'highlight',

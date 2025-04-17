@@ -18,6 +18,8 @@ type CountType = 'words' | 'chars';
  * {{ '' | count }} // Returns 0
  * {{ null | count }} // Returns 0
  * {{ undefined | count }} // Returns 0
+ * 
+ * @author Mofiro Jean
  */
 @Pipe({
   name: 'count',
