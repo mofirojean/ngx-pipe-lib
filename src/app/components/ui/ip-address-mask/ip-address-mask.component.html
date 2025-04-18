@@ -1,0 +1,45 @@
+<div class="w-full border-border border-[1px] lg:w-[40rem] shadow-[5px_20px_100px_10px_#00000024] flex flex-col items-center justify-center gap-3 px-10 py-8 rounded-3xl bg-white">
+    <div class="flex flex-col justify-center mb-4">
+        <h1 class="font-bold text-2xl flex items-center justify-center gap-2">
+            <ng-icon hlm name="heroCpuChip"></ng-icon>
+            <span>Telco Network</span>
+        </h1>
+        <span class="text-sm text-slate-400">Your fast and reliable internet service provider</span>
+    </div>
+    <div class="flex flex-col gap-2 w-full">
+        <div class="flex justify-start gap-2">
+            <span class="text-sm text-slate-400">Your IP</span>
+            @if (isMasked()) {
+                <span class="block border px-2 text-sm rounded-xl border-green-500 text-green-500">protected</span>
+            } @else {
+                <span class="block border px-2 text-sm rounded-xl border-red-500 text-red-500">exposed</span>
+            }
+        </div>
+    </div>
+    <div class="flex justify-between items-center w-full mb-4">
+        <div class="flex justify-center items-center text-4xl">{{ sampleIp() | ipAddressMask:isMasked() }}</div>
+        <button (click)="onMaskIp()" hlmBtn class="rounded-xl" type="button">
+            {{ isMasked() ? 'Unmask IP' : 'Mask IP' }}
+        </button>
+    </div>
+    <div class="grid grid-cols-3 gap-8 w-full">
+        <div class="flex flex-col gap-1">
+            <span class="flex items-center text-sm text-slate-400">
+                <ng-icon hlm size="sm" class="mr-1" name="heroMapPin"></ng-icon> Location
+            </span>
+            <span>Bamenda/Cameroon</span>
+        </div>
+        <div class="flex flex-col gap-1">
+            <span class="flex items-center text-sm text-slate-400">
+                <ng-icon hlm size="sm" class="mr-1" name="heroComputerDesktop"></ng-icon> Subnet
+            </span>
+            <span>192.168.1.2/17</span>
+        </div>
+        <div class="flex flex-col gap-1">
+            <span class="flex items-center text-sm text-slate-400">
+                <ng-icon hlm size="sm" class="mr-1" name="heroArrowPathRoundedSquare"></ng-icon> ASN
+            </span>
+            <span>AS16478</span>
+        </div>
+    </div>
+</div>

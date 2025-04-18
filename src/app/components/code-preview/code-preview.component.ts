@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { NgIcon } from '@ng-icons/core';
 import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
-import { CreditCardMaskComponent } from '../ui/credit-card-mask/credit-card-mask.component';
+import { IpAddressMaskComponent } from '../ui/ip-address-mask/ip-address-mask.component';
 
 @Component({
   selector: 'app-code-preview',
   imports: [
     NgIcon, 
     HlmIconDirective,
-    CreditCardMaskComponent
+    IpAddressMaskComponent
   ],
   templateUrl: './code-preview.component.html',
   styles: `

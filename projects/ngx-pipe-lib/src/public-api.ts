@@ -10,3 +10,5 @@ export * from './lib/ngx-pipe-lib.provider';
 export * from './lib/pipes/email-mask/email-mask.pipe';
 export * from './lib/pipes/json-pretty/json-pretty.pipe';
 export * from './lib/pipes/qr-code/qr-code.pipe';
+export * from './lib/pipes/credit-card-mask/credit-card-mask.pipe';
+export * from './lib/pipes/ip-address-mask/ip-address-mask.pipe';
