@@ -1,0 +1,37 @@
+<div class="w-full border-border border-[1px] lg:w-[40rem] shadow-[5px_20px_100px_10px_#00000024] flex flex-col items-center justify-center gap-6 px-10 py-8 rounded-3xl bg-white">
+    <div class="flex flex-col gap-1">
+        <h1 class="text-center font-bold text-2xl">Odou Store</h1>
+        <p class="text-sm text-gray-500">You can add the item to cart or scan the barcode.</p>
+    </div>
+    <div class="flex h-[20rem] gap-2 w-full">
+        <div class="w-3/5 h-full relative rounded-xl p-3 border-[1px]">
+            <img src="/images/products/image 2.webp" class="h-full rounded-xl" alt="product main">
+        </div>
+        <div class="grid grid-rows-2 h-full w-2/5 gap-2">
+            <div class="w-full flex justify-center rounded-xl p-3 border-[1px]">
+                <img src="/images/products/image 1.webp" class="h-full rounded-xl" alt="product main">
+            </div>
+            <div class="w-full flex justify-center rounded-xl p-3 border-[1px]">
+                <img src="/images/products/image 3.webp" class="h-full rounded-xl" alt="product main">
+            </div>
+        </div>
+    </div>
+    <div class="w-full flex justify-between">
+        <div class="flex gap-1 flex-col">
+            <span class="text-slate-500 text-sm">Product</span>
+            <span>HP EliteBook 1040</span>
+        </div>
+        <div class="flex gap-1 flex-col">
+            <span class="text-slate-500 text-sm">Product ID</span>
+            <span>TC1040TH65</span>
+        </div>
+    </div>
+    <div class="flex justify-between w-full items-center">
+        <div [innerHTML]="'TC1040TH65' | barcode:{elementType:'svg',format:'CODE128', height: 50} | async"></div>
+        <span class="text-slate-500">Or</span>
+        <button hlmBtn class="flex items-center justify-center gap-4">
+            <ng-icon hlm size="sm" [name]="'heroShoppingCart'"></ng-icon>
+            <span>Add to cart</span>
+        </button>
+    </div>
+</div>

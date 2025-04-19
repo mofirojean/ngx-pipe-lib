@@ -7,6 +7,7 @@ import { JsonPrettyPipe } from "./pipes/json-pretty/json-pretty.pipe";
 import { QRCodePipe } from "./pipes/qr-code/qr-code.pipe";
 import { IpAddressMaskPipe } from "./pipes/ip-address-mask/ip-address-mask.pipe";
 import { CreditCardMaskPipe } from "./pipes/credit-card-mask/credit-card-mask.pipe";
+import { BarcodePipe } from "./pipes/barcode/barcode.pipe";
 
 export function provideNgxPipeLib(): Provider[] {
     return [
@@ -17,6 +18,7 @@ export function provideNgxPipeLib(): Provider[] {
         JsonPrettyPipe,
         QRCodePipe,
         IpAddressMaskPipe,
-        CreditCardMaskPipe
+        CreditCardMaskPipe,
+        BarcodePipe
     ]
 }

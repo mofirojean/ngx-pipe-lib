@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { NgIcon } from '@ng-icons/core';
 import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
-import { IpAddressMaskComponent } from '../ui/ip-address-mask/ip-address-mask.component';
+import { BarcodeGeneratorComponent } from '../ui/barcode-generator/barcode-generator.component';
 
 @Component({
   selector: 'app-code-preview',
   imports: [
     NgIcon, 
     HlmIconDirective,
-    IpAddressMaskComponent
+    BarcodeGeneratorComponent
   ],
   templateUrl: './code-preview.component.html',
   styles: `

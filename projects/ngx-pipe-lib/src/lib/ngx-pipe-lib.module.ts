@@ -8,6 +8,7 @@ import { JsonPrettyPipe } from './pipes/json-pretty/json-pretty.pipe';
 import { QRCodePipe } from './pipes/qr-code/qr-code.pipe';
 import { IpAddressMaskPipe } from './pipes/ip-address-mask/ip-address-mask.pipe';
 import { CreditCardMaskPipe } from './pipes/credit-card-mask/credit-card-mask.pipe';
+import { BarcodePipe } from './pipes/barcode/barcode.pipe';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { CreditCardMaskPipe } from './pipes/credit-card-mask/credit-card-mask.pi
     JsonPrettyPipe,
     QRCodePipe,
     IpAddressMaskPipe,
-    CreditCardMaskPipe
+    CreditCardMaskPipe,
+    BarcodePipe
   ],
   exports: [
     CountPipe,
@@ -30,7 +32,8 @@ import { CreditCardMaskPipe } from './pipes/credit-card-mask/credit-card-mask.pi
     JsonPrettyPipe,
     QRCodePipe,
     IpAddressMaskPipe,
-    CreditCardMaskPipe
+    CreditCardMaskPipe,
+    BarcodePipe
   ]
 })
 export class NgxPipeLibModule { }
