@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
 import { NgIcon } from '@ng-icons/core';
 import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
-import { BarcodeGeneratorComponent } from '../ui/barcode-generator/barcode-generator.component';
+import { ReplaceTextComponent } from '../ui/replace-text/replace-text.component';
+
 
 @Component({
   selector: 'app-code-preview',
   imports: [
     NgIcon, 
     HlmIconDirective,
-    BarcodeGeneratorComponent
+    ReplaceTextComponent
   ],
   templateUrl: './code-preview.component.html',
   styles: `

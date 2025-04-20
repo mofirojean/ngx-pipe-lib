@@ -4,7 +4,7 @@ import { NgIcon } from '@ng-icons/core';
 import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
 import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
 import { HlmInputDirective } from '@spartan-ng/ui-input-helm';
-import { CountPipe } from 'ngx-pipes';
+import { CountPipe } from '../../../../../projects/ngx-pipe-lib/src/lib/pipes/count/count.pipe';
 
 @Component({
   selector: 'app-word-editor-count',

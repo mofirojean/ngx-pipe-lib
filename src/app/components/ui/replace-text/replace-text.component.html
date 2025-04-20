@@ -1,0 +1,47 @@
+<div class="w-full lg:w-[40rem] flex flex-col gap-1 shadow-[5px_20px_100px_10px_#00000024]">
+    <div class="w-full flex items-center justify-between bg-white p-3 border-[1px] border-slate-200 rounded-b-sm rounded-t-xl">
+        <div class="flex items-center justify-center gap-1">
+            <ng-icon hlm name="heroDocumentText"/>
+            <span class="font-semibold text-md md:text-lg">TextEditor</span>
+        </div>
+        <div class="flex justify-center items-center">
+            <div class="flex gap-2 items-center ">
+                <input
+                    class="w-40 rounded-xl"
+                    [(ngModel)]="findText"
+                    (input)="isReplace.set(false)"
+                    hlmInput
+                    placeholder="Find"
+                    type="search"
+                    />
+                <input
+                    class="w-40 rounded-xl"
+                    [(ngModel)]="replace"
+                    (input)="isReplace.set(false)"
+                    hlmInput
+                    placeholder="Replace"
+                    type="text"
+                    />
+                <button
+                    class="flex items-center gap-2 rounded-xl"
+                    hlmBtn
+                    type="button"
+                    (click)="replaceText()"
+                    >
+                    Replace
+                </button>
+            </div>
+        </div>
+    </div>
+    <ng-scrollbar hlm class="h-72 py-4 px-6 flex w-full rounded-b-xl rounded-t-sm bg-white border-[1px] border-slate-200">
+        <div class="flex flex-col items-center gap-4">
+            <h1 class="text-center font-bold text-xl">Exploring Modern Web Development with JavaScript and Angular</h1>
+            <p
+                class="text-sm"
+                [innerHTML]="
+                    longTextContent | replace: findText() : replace() : 'highlight' : isReplace()
+                "
+            ></p>
+        </div>
+    </ng-scrollbar>
+</div>
