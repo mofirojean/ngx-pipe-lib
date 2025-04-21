@@ -43,6 +43,12 @@
       "@spartan-ng/ui-scrollarea-helm": [
         "./components/ui/ui-scrollarea-helm/src/index.ts"
       ],
+      "@spartan-ng/ui-menu-helm": [
+        "./components/ui/ui-menu-helm/src/index.ts"
+      ],
+      "@spartan-ng/ui-separator-helm": [
+        "./components/ui/ui-separator-helm/src/index.ts"
+      ]
     }
   },
   "angularCompilerOptions": {

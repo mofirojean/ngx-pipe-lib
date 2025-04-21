@@ -1,0 +1,46 @@
+<div class="w-full border-border border-[1px] lg:w-[30rem] shadow-[5px_20px_100px_10px_#00000024] flex items-center justify-between gap-3 px-4 py-4 rounded-3xl bg-white">
+    <div class="flex justify-center gap-2 items-center cursor-pointer">
+        <ng-icon hlm name="heroCubeTransparent"/>
+        <span class="font-bold">zerobox</span>
+    </div>
+    <div class="flex items-center justify-center gap-2">
+        <div class="w-10 h-10 rounded-full hover:bg-slate-200 flex justify-center items-center">
+            <ng-icon hlm class="cursor-pointer" name="heroChatBubbleBottomCenterText"/>
+        </div>
+        <div class="w-10 h-10 rounded-full hover:bg-slate-200 flex justify-center items-center">
+            <ng-icon hlm class="cursor-pointer" name="heroBell"/>
+        </div>
+        <div hlmMenuBarItem brnMenuItem [brnMenuTriggerFor]='profile' class="w-16 h-16 border-[5px] cursor-pointer border-slate-200 bg-slate-300 rounded-full flex justify-center items-center">
+            <span class="font-semibold">{{ user().name | initials }}</span>
+        </div>
+        <ng-template #profile>
+            <hlm-menu variant='menubar' class='w-[20rem] p-4 rounded-2xl shadow'>
+              <div brnMenuGroup class="w-full flex flex-col">
+                <div class="flex items-center gap-3 mb-2">
+                    <div class="w-16 h-16 border-[5px] cursor-pointer border-slate-200 bg-slate-300 rounded-full flex justify-center items-center">
+                        <span class="font-semibold">{{ user().name | initials }}</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span>{{ user().name }}</span>
+                        <span class="text-slate-400">{{ user().email }}</span>
+                    </div>
+                </div>
+                @for (item of items; track $index) {
+                    <div hlmMenuBarItem class="flex items-center w-full rounded-xl hover:bg-slate-200 py-1 cursor-pointer">
+                        <div class="w-[2rem] flex items-center">
+                            <ng-icon hlm size="sm" class="cursor-pointer " name="{{item.icon}}"/>
+                        </div>
+                        <div class="flex flex-grow items-center justify-between">
+                            <span>{{ item.name }}</span>
+                            @if (item.switcher) {
+                                <hlm-switch />
+                            }
+                        </div>
+                    </div>
+                }
+              </div>
+            </hlm-menu>
+          </ng-template>
+    </div>
+</div>
+

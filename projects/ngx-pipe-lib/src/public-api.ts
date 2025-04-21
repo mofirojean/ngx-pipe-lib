@@ -13,3 +13,4 @@ export * from './lib/pipes/qr-code/qr-code.pipe';
 export * from './lib/pipes/credit-card-mask/credit-card-mask.pipe';
 export * from './lib/pipes/ip-address-mask/ip-address-mask.pipe';
 export * from './lib/pipes/barcode/barcode.pipe';
+export * from './lib/pipes/initials/initials.pipe';

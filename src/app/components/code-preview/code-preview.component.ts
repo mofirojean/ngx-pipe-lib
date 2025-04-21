@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgIcon } from '@ng-icons/core';
 import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
-import { ReplaceTextComponent } from '../ui/replace-text/replace-text.component';
+import { ProfileInitialsComponent } from '../ui/profile-initials/profile-initials.component';
 
 
 @Component({
@@ -9,7 +9,7 @@ import { ReplaceTextComponent } from '../ui/replace-text/replace-text.component'
   imports: [
     NgIcon, 
     HlmIconDirective,
-    ReplaceTextComponent
+    ProfileInitialsComponent
   ],
   templateUrl: './code-preview.component.html',
   styles: `

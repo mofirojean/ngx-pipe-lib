@@ -5,7 +5,6 @@ import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
 import { HlmInputDirective } from '@spartan-ng/ui-input-helm';
 import { HlmScrollAreaDirective } from '@spartan-ng/ui-scrollarea-helm';
 import { NgScrollbarModule } from 'ngx-scrollbar';
-import { HighlightPipe } from '../../../../../projects/ngx-pipe-lib/src/public-api';
 import { heroBookOpen, heroDocumentText, heroMagnifyingGlass } from '@ng-icons/heroicons/outline';
 import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
 import { ReplacePipe } from '../../../../../projects/ngx-pipe-lib/src/lib/pipes/replace/replace.pipe';
@@ -33,7 +32,6 @@ const longText = `
     HlmScrollAreaDirective, 
     NgScrollbarModule,
     FormsModule,
-    HighlightPipe,
     HlmButtonDirective,
     FormsModule,
     ReplacePipe

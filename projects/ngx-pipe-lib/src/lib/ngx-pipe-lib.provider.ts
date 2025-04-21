@@ -9,6 +9,7 @@ import { IpAddressMaskPipe } from "./pipes/ip-address-mask/ip-address-mask.pipe"
 import { CreditCardMaskPipe } from "./pipes/credit-card-mask/credit-card-mask.pipe";
 import { BarcodePipe } from "./pipes/barcode/barcode.pipe";
 import { ReplacePipe } from "./pipes/replace/replace.pipe";
+import { InitialsPipe } from "./pipes/initials/initials.pipe";
 
 export function provideNgxPipeLib(): Provider[] {
     return [
@@ -21,6 +22,7 @@ export function provideNgxPipeLib(): Provider[] {
         IpAddressMaskPipe,
         CreditCardMaskPipe,
         BarcodePipe,
-        ReplacePipe
+        ReplacePipe,
+        InitialsPipe
     ]
 }
