@@ -11,6 +11,9 @@ import { CreditCardMaskPipe } from './pipes/credit-card-mask/credit-card-mask.pi
 import { BarcodePipe } from './pipes/barcode/barcode.pipe';
 import { ReplacePipe } from './pipes/replace/replace.pipe';
 import { InitialsPipe } from './pipes/initials/initials.pipe';
+import { TextToSpeechPipe } from './pipes/text-to-speech/text-to-speech.pipe';
+import { GravatarPipe } from './pipes/gravatar/gravatar.pipe';
+import { ColorConvertPipe } from './pipes/color-convert/color-convert.pipe';
 
 
 @NgModule({
@@ -26,7 +29,10 @@ import { InitialsPipe } from './pipes/initials/initials.pipe';
     CreditCardMaskPipe,
     BarcodePipe,
     ReplacePipe,
-    InitialsPipe
+    InitialsPipe,
+    TextToSpeechPipe,
+    GravatarPipe,
+    ColorConvertPipe
   ],
   exports: [
     CountPipe,
@@ -39,7 +45,10 @@ import { InitialsPipe } from './pipes/initials/initials.pipe';
     CreditCardMaskPipe,
     BarcodePipe,
     ReplacePipe,
-    InitialsPipe
+    InitialsPipe,
+    TextToSpeechPipe,
+    GravatarPipe,
+    ColorConvertPipe
   ]
 })
 export class NgxPipeLibModule { }

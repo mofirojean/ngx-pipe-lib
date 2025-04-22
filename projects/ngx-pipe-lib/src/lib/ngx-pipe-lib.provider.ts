@@ -10,6 +10,9 @@ import { CreditCardMaskPipe } from "./pipes/credit-card-mask/credit-card-mask.pi
 import { BarcodePipe } from "./pipes/barcode/barcode.pipe";
 import { ReplacePipe } from "./pipes/replace/replace.pipe";
 import { InitialsPipe } from "./pipes/initials/initials.pipe";
+import { TextToSpeechPipe } from './pipes/text-to-speech/text-to-speech.pipe';
+import { GravatarPipe } from './pipes/gravatar/gravatar.pipe';
+import { ColorConvertPipe } from './pipes/color-convert/color-convert.pipe';
 
 export function provideNgxPipeLib(): Provider[] {
     return [
@@ -23,6 +26,9 @@ export function provideNgxPipeLib(): Provider[] {
         CreditCardMaskPipe,
         BarcodePipe,
         ReplacePipe,
-        InitialsPipe
+        InitialsPipe,
+        TextToSpeechPipe,
+        GravatarPipe,
+        ColorConvertPipe
     ]
 }
