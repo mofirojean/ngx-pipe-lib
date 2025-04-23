@@ -1,0 +1,45 @@
+<div
+  class="w-full border-border border-[1px] lg:w-[30rem] shadow-[5px_20px_100px_10px_#00000024] flex flex-col items-center justify-center gap-6 px-10 py-20 rounded-3xl"
+  [ngStyle]="gradientStyle()"
+>
+  <div class="h-[95%] w-[80%] bg-white p-4 flex flex-col gap-3 rounded-3xl m-auto">
+    <div class="h-[5rem] w-full rounded-2xl relative" [ngStyle]="solidBgStyle()">
+      <ng-icon
+        hlm
+        class="text-slate-200/70 hover:text-slate-200 cursor-pointer absolute z-20 top-3 right-3"
+        [name]="isToggleHex() ? 'lucideCheck' : 'lucideCopy'"
+        (click)="copyHex(color())"
+      ></ng-icon>
+      <span class="text-lg font-semibold absolute bottom-3 left-3 text-white">
+        {{ color() }}
+      </span>
+    </div>
+    <div class="flex flex-col gap-2">
+      <input
+        aria-label="ColorConvert"
+        hlmInput
+        class="w-full rounded-xl"
+        type="text"
+        [(ngModel)]="color"
+        placeholder="HEX"
+      />
+      <div class="flex gap-2 items-center">
+        <input
+          aria-label="ColorConvert"
+          hlmInput
+          class="rounded-xl flex-grow"
+          type="text"
+          [value]="color() | colorConvert: 'rgb'"
+          placeholder="RGB"
+          readonly
+        />
+        <ng-icon
+          hlm
+          class="w-full stroke-1 text-slate-300 hover:text-slate-500 cursor-pointer"
+          [name]="isToggleRgb() ? 'lucideCheck' : 'lucideCopy'"
+          (click)="copyRgb(color())"
+        ></ng-icon>
+      </div>
+    </div>
+  </div>
+</div>

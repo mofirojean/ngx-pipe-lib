@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgIcon } from '@ng-icons/core';
 import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
-import { ProfileInitialsComponent } from '../ui/profile-initials/profile-initials.component';
+import { ColorPickerComponent } from '../ui/color-picker/color-picker.component';
 
 
 @Component({
@@ -9,7 +9,7 @@ import { ProfileInitialsComponent } from '../ui/profile-initials/profile-initial
   imports: [
     NgIcon, 
     HlmIconDirective,
-    ProfileInitialsComponent
+    ColorPickerComponent
   ],
   templateUrl: './code-preview.component.html',
   styles: `

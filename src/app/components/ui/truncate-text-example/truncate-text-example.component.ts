@@ -8,7 +8,7 @@ import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
 import { heroPaperAirplaneSolid } from '@ng-icons/heroicons/solid';
 import { heroGlobeAlt, heroClipboard, heroUserPlus, heroClipboardDocumentCheck, heroCheck } from '@ng-icons/heroicons/outline';
 import {trigger, transition, animate, style} from '@angular/animations';
-import { TruncatePipe } from 'ngx-pipes';
+import { TruncatePipe } from '../../../../../projects/ngx-pipe-lib/src/public-api';
 
 
 @Component({

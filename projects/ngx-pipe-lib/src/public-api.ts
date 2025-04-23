@@ -14,3 +14,6 @@ export * from './lib/pipes/credit-card-mask/credit-card-mask.pipe';
 export * from './lib/pipes/ip-address-mask/ip-address-mask.pipe';
 export * from './lib/pipes/barcode/barcode.pipe';
 export * from './lib/pipes/initials/initials.pipe';
+export * from './lib/pipes/text-to-speech/text-to-speech.pipe';
+export * from './lib/pipes/color-convert/color-convert.pipe';
+export * from './lib/pipes/gravatar/gravatar.pipe';

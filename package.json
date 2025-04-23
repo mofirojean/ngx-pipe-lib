@@ -27,6 +27,7 @@
     "@spartan-ng/ui-button-helm": "^0.0.1-alpha.357",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "js-md5": "^0.8.3",
     "jsbarcode": "^3.11.6",
     "ng-otp-input": "^2.0.7",
     "ngx-markdown": "^19.1.1",
