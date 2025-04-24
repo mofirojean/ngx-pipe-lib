@@ -1,0 +1,30 @@
+<div class="w-full border-border border-[1px] lg:w-[30rem] shadow-[5px_20px_100px_10px_#00000024] flex flex-col items-center justify-center gap-6 p-8 rounded-3xl bg-white">
+    <div class="flex flex-col gap-2 items-center justify-center">
+        <h1 class="font-bold text-2xl flex items-center justify-center">
+            <ng-icon hlm class="mr-4" name="heroPaintBrushSolid"/>
+            <span>Gravatar Generator</span>
+        </h1>
+        <p class="text-sm text-slate-500">Craft your unique gravatar with your email.</p>
+    </div>
+    <div class="flex w-full gap-2">
+        <input
+        aria-label="ColorConvert"
+        hlmInput
+        class="w-full rounded-xl"
+        type="email"
+        placeholder="example@gmail.com"
+      />
+      <button hlmBtn (click)="generateGravatar()" class="rounded-xl flex items-center gap-2"><ng-icon hlm size="sm" name="heroPaintBrush"/> Generate</button>
+    </div>
+    @if (gravatarEmail()) {
+        <img [src]="gravatarEmail() | gravatar:100" class="rounded-full" />
+    } @else {
+        <div class="flex items-center justify-center w-full border-[2px] border-dashed rounded-xl h-[10rem]">
+            <div class="text-slate-500 text-sm flex items-center justify-center">
+                <ng-icon hlm size="sm" class="mr-2" name="heroPaintBrush"/>
+                <span>Gravatar Appear Here</span>
+            </div>
+        </div>
+    }
+    <div class="flex items-center justify-center gap-1 text-sm"><span>Inspired by</span> <a href="https://gravatar.com/" class="text-blue-600 font-bold hover:underline" target="_blank" rel="noopener noreferrer">Gravatar</a></div>
+</div>
