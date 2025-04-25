@@ -14,6 +14,7 @@ import { InitialsPipe } from './pipes/initials/initials.pipe';
 import { TextToSpeechPipe } from './pipes/text-to-speech/text-to-speech.pipe';
 import { GravatarPipe } from './pipes/gravatar/gravatar.pipe';
 import { ColorConvertPipe } from './pipes/color-convert/color-convert.pipe';
+import { HighlightWordPipe } from './pipes/hightlight-word/highlight-word.pipe';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ColorConvertPipe } from './pipes/color-convert/color-convert.pipe';
     InitialsPipe,
     TextToSpeechPipe,
     GravatarPipe,
-    ColorConvertPipe
+    ColorConvertPipe,
+    HighlightWordPipe
   ],
   exports: [
     CountPipe,
@@ -48,7 +50,8 @@ import { ColorConvertPipe } from './pipes/color-convert/color-convert.pipe';
     InitialsPipe,
     TextToSpeechPipe,
     GravatarPipe,
-    ColorConvertPipe
+    ColorConvertPipe,
+    HighlightWordPipe
   ]
 })
 export class NgxPipeLibModule { }

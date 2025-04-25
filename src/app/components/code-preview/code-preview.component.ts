@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { NgIcon } from '@ng-icons/core';
 import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
-import { ColorPickerComponent } from '../ui/color-picker/color-picker.component';
+import { GravatarGeneratorComponent } from '../ui/gravatar-generator/gravatar-generator.component';
+import { TextReaderComponent } from '../ui/text-reader/text-reader.component';
 
 
 @Component({
@@ -9,7 +10,7 @@ import { ColorPickerComponent } from '../ui/color-picker/color-picker.component'
   imports: [
     NgIcon, 
     HlmIconDirective,
-    ColorPickerComponent
+    TextReaderComponent
   ],
   templateUrl: './code-preview.component.html',
   styles: `
