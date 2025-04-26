@@ -17,3 +17,4 @@ export * from './lib/pipes/initials/initials.pipe';
 export * from './lib/pipes/text-to-speech/text-to-speech.pipe';
 export * from './lib/pipes/color-convert/color-convert.pipe';
 export * from './lib/pipes/gravatar/gravatar.pipe';
+export * from './lib/pipes/device-type/device-type.pipe';

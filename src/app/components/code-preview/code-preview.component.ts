@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { NgIcon } from '@ng-icons/core';
 import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
-import { GravatarGeneratorComponent } from '../ui/gravatar-generator/gravatar-generator.component';
-import { TextReaderComponent } from '../ui/text-reader/text-reader.component';
+import { DeviceDetectorComponent } from '../ui/device-detector/device-detector.component';
 
 
 @Component({
@@ -10,7 +9,7 @@ import { TextReaderComponent } from '../ui/text-reader/text-reader.component';
   imports: [
     NgIcon, 
     HlmIconDirective,
-    TextReaderComponent
+    DeviceDetectorComponent
   ],
   templateUrl: './code-preview.component.html',
   styles: `

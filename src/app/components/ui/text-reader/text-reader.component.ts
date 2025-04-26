@@ -2,10 +2,8 @@ import { Component, ElementRef, NgZone, QueryList, signal, ViewChildren } from '
 import { FormsModule } from '@angular/forms';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { heroPause, heroPlay, heroStop } from '@ng-icons/heroicons/outline';
-import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
 import { HlmInputDirective } from '@spartan-ng/ui-input-helm';
 import { NgScrollbarModule } from 'ngx-scrollbar';
-import { TextToSpeechPipe } from '../../../../../projects/ngx-pipe-lib/src/public-api';
 import { CommonModule } from '@angular/common';
 import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
 
@@ -16,8 +14,6 @@ import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
     FormsModule,
     NgIcon,
     HlmInputDirective,
-    HlmIconDirective,
-    TextToSpeechPipe,
     HlmButtonDirective,
     CommonModule
   ],
