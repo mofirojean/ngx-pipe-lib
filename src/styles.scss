@@ -62,10 +62,53 @@
   }
 }
 
+
+/* HighlightPipe */
 .highlight {
   display: inline-flex;
   background-color: #475569;
   color: #fff;
   border-radius: 5px;
   font-weight: 400;
+}
+
+/* JsonPrettyPipe - Uses VScode color scheme */
+.json-pretty {
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 16px;
+  border-radius: 12px;
+  white-space: pre-wrap;
+}
+
+.json-key {
+  color: #569cd6; /* Blue for keys */
+}
+
+.json-string {
+  color: #ce9178; /* Green for strings */
+}
+
+.json-number {
+  color: #b5cea8; /* Orange for numbers */
+}
+
+.json-boolean {
+  color: #c586c0; /* Purple for booleans */
+}
+
+.json-null {
+  color: #808080; /* Gray for null */
+}
+
+.json-punctuation {
+  color: #d4d4d4; /* White for punctuation */
+}
+
+.json-error {
+  color: #f44747; /* Red for errors */
+  font-weight: bold;
 }

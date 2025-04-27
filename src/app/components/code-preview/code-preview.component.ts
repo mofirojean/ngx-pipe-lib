@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgIcon } from '@ng-icons/core';
 import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
-import { DeviceDetectorComponent } from '../ui/device-detector/device-detector.component';
+import { JsonPrettyComponent } from '../ui/json-pretty/json-pretty.component';
 
 
 @Component({
@@ -9,7 +9,7 @@ import { DeviceDetectorComponent } from '../ui/device-detector/device-detector.c
   imports: [
     NgIcon, 
     HlmIconDirective,
-    DeviceDetectorComponent
+    JsonPrettyComponent
   ],
   templateUrl: './code-preview.component.html',
   styles: `
