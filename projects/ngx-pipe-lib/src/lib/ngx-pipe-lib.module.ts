@@ -15,6 +15,7 @@ import { TextToSpeechPipe } from './pipes/text-to-speech/text-to-speech.pipe';
 import { GravatarPipe } from './pipes/gravatar/gravatar.pipe';
 import { ColorConvertPipe } from './pipes/color-convert/color-convert.pipe';
 import { DeviceTypePipe } from './pipes/device-type/device-type.pipe';
+import { MorseCodePipe } from './pipes/morse-code/morse-code.pipe';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { DeviceTypePipe } from './pipes/device-type/device-type.pipe';
     TextToSpeechPipe,
     GravatarPipe,
     ColorConvertPipe,
-    DeviceTypePipe
+    DeviceTypePipe,
+    MorseCodePipe
   ],
   exports: [
     CountPipe,
@@ -51,7 +53,8 @@ import { DeviceTypePipe } from './pipes/device-type/device-type.pipe';
     TextToSpeechPipe,
     GravatarPipe,
     ColorConvertPipe,
-    DeviceTypePipe
+    DeviceTypePipe,
+    MorseCodePipe
   ]
 })
 export class NgxPipeLibModule { }

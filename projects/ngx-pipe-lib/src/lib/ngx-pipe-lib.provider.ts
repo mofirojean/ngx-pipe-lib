@@ -14,6 +14,7 @@ import { TextToSpeechPipe } from './pipes/text-to-speech/text-to-speech.pipe';
 import { GravatarPipe } from './pipes/gravatar/gravatar.pipe';
 import { ColorConvertPipe } from './pipes/color-convert/color-convert.pipe';
 import { DeviceTypePipe } from "./pipes/device-type/device-type.pipe";
+import { MorseCodePipe } from "./pipes/morse-code/morse-code.pipe";
 
 export function provideNgxPipeLib(): Provider[] {
     return [
@@ -31,6 +32,7 @@ export function provideNgxPipeLib(): Provider[] {
         TextToSpeechPipe,
         GravatarPipe,
         ColorConvertPipe,
-        DeviceTypePipe
+        DeviceTypePipe,
+        MorseCodePipe
     ]
 }

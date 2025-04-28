@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgIcon } from '@ng-icons/core';
 import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
-import { JsonPrettyComponent } from '../ui/json-pretty/json-pretty.component';
+import { MorseCodeGeneratorComponent } from '../ui/morse-code-generator/morse-code-generator.component';
 
 
 @Component({
@@ -9,7 +9,7 @@ import { JsonPrettyComponent } from '../ui/json-pretty/json-pretty.component';
   imports: [
     NgIcon, 
     HlmIconDirective,
-    JsonPrettyComponent
+    MorseCodeGeneratorComponent
   ],
   templateUrl: './code-preview.component.html',
   styles: `
