@@ -40,7 +40,7 @@ export class ResetPasswordMaskComponent implements OnDestroy {
     },
     length: 6
   };
-  private _intervalId?: number;
+  private _intervalId?: NodeJS.Timeout;
 
   public countdown = signal(60);
   public isResendDisabled = computed(() => this.countdown() > 0);
