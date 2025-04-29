@@ -16,6 +16,7 @@ import { MorseCodeGeneratorComponent } from "../components/ui/morse-code-generat
 import { ReplaceTextComponent } from "../components/ui/replace-text/replace-text.component";
 import { TextReaderComponent } from "../components/ui/text-reader/text-reader.component";
 import { TruncateTextExampleComponent } from "../components/ui/truncate-text-example/truncate-text-example.component";
+import { ProfileInitialsComponent } from "../components/ui/profile-initials/profile-initials.component";
 
 export const sidebarChildrenRoutes: Route[] = [
     {
@@ -66,7 +67,7 @@ export const sidebarChildrenRoutes: Route[] = [
     {
         path: 'initials',
         title: 'Initials Pipe',
-        component: BarcodeGeneratorComponent, 
+        component: ProfileInitialsComponent, 
     },
     {
         path: 'ip-address',
