@@ -16,6 +16,9 @@ import { GravatarPipe } from './pipes/gravatar/gravatar.pipe';
 import { ColorConvertPipe } from './pipes/color-convert/color-convert.pipe';
 import { DeviceTypePipe } from './pipes/device-type/device-type.pipe';
 import { MorseCodePipe } from './pipes/morse-code/morse-code.pipe';
+import { ReversePipe } from './pipes/reverse/reverse.pipe';
+import { AsciiArtPipe } from './pipes/ascii-art/ascii-art.pipe';
+import { LetterAsciiArtPipe } from './pipes/letter-ascii-art/letter-ascii-art.pipe';
 
 
 @NgModule({
@@ -36,7 +39,10 @@ import { MorseCodePipe } from './pipes/morse-code/morse-code.pipe';
     GravatarPipe,
     ColorConvertPipe,
     DeviceTypePipe,
-    MorseCodePipe
+    MorseCodePipe,
+    ReversePipe,
+    AsciiArtPipe,
+    LetterAsciiArtPipe
   ],
   exports: [
     CountPipe,
@@ -54,7 +60,10 @@ import { MorseCodePipe } from './pipes/morse-code/morse-code.pipe';
     GravatarPipe,
     ColorConvertPipe,
     DeviceTypePipe,
-    MorseCodePipe
+    MorseCodePipe,
+    ReversePipe,
+    AsciiArtPipe,
+    LetterAsciiArtPipe
   ]
 })
 export class NgxPipeLibModule { }

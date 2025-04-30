@@ -17,6 +17,9 @@ import { ReplaceTextComponent } from "../components/ui/replace-text/replace-text
 import { TextReaderComponent } from "../components/ui/text-reader/text-reader.component";
 import { TruncateTextExampleComponent } from "../components/ui/truncate-text-example/truncate-text-example.component";
 import { ProfileInitialsComponent } from "../components/ui/profile-initials/profile-initials.component";
+import { ReverseWordComponent } from "../components/ui/reverse-word/reverse-word.component";
+import { AsciiArtGeneratorComponent } from "../components/ui/ascii-art-generator/ascii-art-generator.component";
+import { LetterAsciiArtGeneratorComponent } from "../components/ui/letter-ascii-art-generator/letter-ascii-art-generator.component";
 
 export const sidebarChildrenRoutes: Route[] = [
     {
@@ -99,6 +102,21 @@ export const sidebarChildrenRoutes: Route[] = [
         title: 'Truncate Pipe',
         component: TruncateTextExampleComponent, 
     },
+    {
+        path: 'reverse',
+        title: 'Reverse Pipe',
+        component: ReverseWordComponent, 
+    },
+    {
+        path: 'ascii-art',
+        title: 'ASCII Art Pipe',
+        component: AsciiArtGeneratorComponent, 
+    },
+    {
+        path: 'letter-ascii-art',
+        title: 'Letter ASCII Art Pipe',
+        component: LetterAsciiArtGeneratorComponent, 
+    },
     /**
      * Default route
      */
@@ -180,5 +198,17 @@ export const sidebarItems: SidebarItem[] = [
     {
         link: '/pipes/truncate',
         name: 'Truncate'
+    },
+    {
+        link: '/pipes/reverse',
+        name: 'Reverse'
+    },
+    {
+        link: '/pipes/ascii-art',
+        name: 'ASCII Art'
+    },
+    {
+        link: '/pipes/letter-ascii-art',
+        name: 'Letter ASCII Art'
     },
 ]

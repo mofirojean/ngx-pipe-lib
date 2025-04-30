@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgIcon } from '@ng-icons/core';
 import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
-import { MorseCodeGeneratorComponent } from '../ui/morse-code-generator/morse-code-generator.component';
+import { ReverseWordComponent } from '../ui/reverse-word/reverse-word.component';
 
 
 @Component({
@@ -9,7 +9,7 @@ import { MorseCodeGeneratorComponent } from '../ui/morse-code-generator/morse-co
   imports: [
     NgIcon, 
     HlmIconDirective,
-    MorseCodeGeneratorComponent
+    ReverseWordComponent
   ],
   templateUrl: './code-preview.component.html',
   styles: `
