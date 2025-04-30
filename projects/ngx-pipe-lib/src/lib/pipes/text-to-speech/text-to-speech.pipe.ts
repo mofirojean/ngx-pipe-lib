@@ -9,8 +9,8 @@ import { Pipe, PipeTransform } from '@angular/core';
  * @returns {void} - Triggers speech synthesis (no return value).
  *
  * @example
- * <button (click)="'Hello World' | textToSpeech">Speak</button>
- * <button (click)="'Bonjour' | textToSpeech:'fr-FR'">Speak French</button>
+ * <div>{{ Hello World' | textToSpeech }}</div>
+ * <div>{{ 'Bonjour' | textToSpeech:'fr-FR' }}h</div>
  * 
  * @author Mofiro Jean
  */
