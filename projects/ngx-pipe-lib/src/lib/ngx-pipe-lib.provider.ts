@@ -16,7 +16,6 @@ import { ColorConvertPipe } from './pipes/color-convert/color-convert.pipe';
 import { DeviceTypePipe } from "./pipes/device-type/device-type.pipe";
 import { MorseCodePipe } from "./pipes/morse-code/morse-code.pipe";
 import { AsciiArtPipe } from "./pipes/ascii-art/ascii-art.pipe";
-import { LetterAsciiArtPipe } from "./pipes/letter-ascii-art/letter-ascii-art.pipe";
 
 export function provideNgxPipeLib(): Provider[] {
     return [
@@ -37,7 +36,6 @@ export function provideNgxPipeLib(): Provider[] {
         DeviceTypePipe,
         MorseCodePipe,
         ReplacePipe,
-        AsciiArtPipe,
-        LetterAsciiArtPipe
+        AsciiArtPipe
     ]
 }

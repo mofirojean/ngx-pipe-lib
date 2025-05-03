@@ -15,7 +15,7 @@ import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
     NgIcon,
     HlmInputDirective,
     HlmButtonDirective,
-    CommonModule,
+    CommonModule
   ],
   templateUrl: './text-reader.component.html',
   styles: `

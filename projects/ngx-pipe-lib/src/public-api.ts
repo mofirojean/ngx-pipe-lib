@@ -21,4 +21,3 @@ export * from './lib/pipes/device-type/device-type.pipe';
 export * from './lib/pipes/morse-code/morse-code.pipe';
 export * from './lib/pipes/reverse/reverse.pipe';
 export * from './lib/pipes/ascii-art/ascii-art.pipe';
-export * from './lib/pipes/letter-ascii-art/letter-ascii-art.pipe';

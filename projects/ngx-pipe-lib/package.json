@@ -17,11 +17,11 @@
     "@angular/core": "^19.1.0"
   },
   "dependencies": {
+    "figlet": "^1.8.1",
     "js-md5": "^0.8.3",
     "jsbarcode": "^3.11.6",
     "qrcode": "^1.5.4",
-    "tslib": "^2.3.0",
-    "figlet": "^1.8.1"
+    "tslib": "^2.3.0"
   },
   "devDependencies": {
     "@types/qrcode": "^1.5.5"
