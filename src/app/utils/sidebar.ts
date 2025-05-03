@@ -19,6 +19,7 @@ import { TruncateTextExampleComponent } from "../components/ui/truncate-text-exa
 import { ProfileInitialsComponent } from "../components/ui/profile-initials/profile-initials.component";
 import { ReverseWordComponent } from "../components/ui/reverse-word/reverse-word.component";
 import { AsciiArtGeneratorComponent } from "../components/ui/ascii-art-generator/ascii-art-generator.component";
+import { TextTransformComponent } from "../components/ui/text-transform/text-transform.component";
 
 
 export const sidebarChildrenRoutes: Route[] = [
@@ -108,10 +109,15 @@ export const sidebarChildrenRoutes: Route[] = [
         component: ReverseWordComponent, 
     },
     {
-        path: 'ascii-art',
-        title: 'ASCII Art Pipe',
-        component: AsciiArtGeneratorComponent, 
+        path: 'text-transform',
+        title: 'Text Transform',
+        component: TextTransformComponent, 
     },
+    // {
+    //     path: 'ascii-art',
+    //     title: 'ASCII Art Pipe',
+    //     component: AsciiArtGeneratorComponent, 
+    // },
     // {
     //     path: 'letter-ascii-art',
     //     title: 'Letter ASCII Art Pipe',
@@ -202,6 +208,10 @@ export const sidebarItems: SidebarItem[] = [
     {
         link: '/pipes/reverse',
         name: 'Reverse'
+    },
+    {
+        link: '/pipes/text-transform',
+        name: 'Text Transform'
     },
     // {
     //     link: '/pipes/ascii-art',

@@ -16,6 +16,10 @@ import { ColorConvertPipe } from './pipes/color-convert/color-convert.pipe';
 import { DeviceTypePipe } from "./pipes/device-type/device-type.pipe";
 import { MorseCodePipe } from "./pipes/morse-code/morse-code.pipe";
 import { AsciiArtPipe } from "./pipes/ascii-art/ascii-art.pipe";
+import { TitleCasePipe } from "@angular/common";
+import { CamelCasePipe } from "./pipes/camel-case/camel-case.pipe";
+import { KebabCasePipe } from "./pipes/kebab-case/kebab-case.pipe";
+import { SnakeCasePipe } from "./pipes/snake-case/snake-case.pipe";
 
 export function provideNgxPipeLib(): Provider[] {
     return [
@@ -36,6 +40,10 @@ export function provideNgxPipeLib(): Provider[] {
         DeviceTypePipe,
         MorseCodePipe,
         ReplacePipe,
-        AsciiArtPipe
+        AsciiArtPipe,
+        TitleCasePipe,
+        KebabCasePipe,
+        SnakeCasePipe,
+        CamelCasePipe
     ]
 }

@@ -2,7 +2,6 @@ import { Component, signal } from '@angular/core';
 import { NgIcon } from '@ng-icons/core';
 import { HlmIconDirective } from '@spartan-ng/ui-icon-helm';
 import { HlmInputDirective } from '@spartan-ng/ui-input-helm';
-import { LetterAsciiArtPipe } from '../../../../../projects/ngx-pipe-lib/src/public-api';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -11,7 +10,6 @@ import { FormsModule } from '@angular/forms';
     NgIcon,
     HlmIconDirective,
     HlmInputDirective,
-    LetterAsciiArtPipe,
     FormsModule
   ],
   template: `
@@ -27,7 +25,6 @@ import { FormsModule } from '@angular/forms';
         <ng-icon hlm name="heroChevronDoubleDown"/>
       </div>
       <div 
-        [innerHTML]="sampleText() | letterAsciiArt"
         class="rounded-md p-4 flex justify-center items-center uppercase text-white overflow-auto h-[300px] bg-black overflow-y-auto">
       </div>
 </div>

@@ -21,3 +21,7 @@ export * from './lib/pipes/device-type/device-type.pipe';
 export * from './lib/pipes/morse-code/morse-code.pipe';
 export * from './lib/pipes/reverse/reverse.pipe';
 export * from './lib/pipes/ascii-art/ascii-art.pipe';
+export * from './lib/pipes/title-case/title-case.pipe';
+export * from './lib/pipes/kebab-case/kebab-case.pipe';
+export * from './lib/pipes/snake-case/snake-case.pipe';
+export * from './lib/pipes/camel-case/camel-case.pipe';

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, TitleCasePipe } from '@angular/common';
 import { CountPipe } from './pipes/count/count.pipe';
 import { TruncatePipe } from './pipes/truncate/truncate.pipe';
 import { HighlightPipe } from './pipes/highlight/highlight.pipe';
@@ -18,6 +18,9 @@ import { DeviceTypePipe } from './pipes/device-type/device-type.pipe';
 import { MorseCodePipe } from './pipes/morse-code/morse-code.pipe';
 import { ReversePipe } from './pipes/reverse/reverse.pipe';
 import { AsciiArtPipe } from './pipes/ascii-art/ascii-art.pipe';
+import { KebabCasePipe } from './pipes/kebab-case/kebab-case.pipe';
+import { SnakeCasePipe } from './pipes/snake-case/snake-case.pipe';
+import { CamelCasePipe } from './pipes/camel-case/camel-case.pipe';
 
 
 @NgModule({
@@ -41,6 +44,10 @@ import { AsciiArtPipe } from './pipes/ascii-art/ascii-art.pipe';
     MorseCodePipe,
     ReversePipe,
     AsciiArtPipe,
+    TitleCasePipe,
+    KebabCasePipe,
+    SnakeCasePipe,
+    CamelCasePipe
   ],
   exports: [
     CountPipe,
@@ -61,6 +68,10 @@ import { AsciiArtPipe } from './pipes/ascii-art/ascii-art.pipe';
     MorseCodePipe,
     ReversePipe,
     AsciiArtPipe,
+    TitleCasePipe,
+    KebabCasePipe,
+    SnakeCasePipe,
+    CamelCasePipe
   ]
 })
 export class NgxPipeLibModule { }
