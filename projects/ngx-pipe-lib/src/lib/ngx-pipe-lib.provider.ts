@@ -20,6 +20,8 @@ import { TitleCasePipe } from "@angular/common";
 import { CamelCasePipe } from "./pipes/camel-case/camel-case.pipe";
 import { KebabCasePipe } from "./pipes/kebab-case/kebab-case.pipe";
 import { SnakeCasePipe } from "./pipes/snake-case/snake-case.pipe";
+import { HtmlEscapePipe } from "./pipes/html-escape/html-escape.pipe";
+import { HtmlSanitizePipe } from "./pipes/html-sanitize/html-sanitize.pipe";
 
 export function provideNgxPipeLib(): Provider[] {
     return [
@@ -44,6 +46,8 @@ export function provideNgxPipeLib(): Provider[] {
         TitleCasePipe,
         KebabCasePipe,
         SnakeCasePipe,
-        CamelCasePipe
+        CamelCasePipe,
+        HtmlEscapePipe,
+        HtmlSanitizePipe
     ]
 }

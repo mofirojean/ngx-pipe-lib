@@ -21,6 +21,8 @@ import { AsciiArtPipe } from './pipes/ascii-art/ascii-art.pipe';
 import { KebabCasePipe } from './pipes/kebab-case/kebab-case.pipe';
 import { SnakeCasePipe } from './pipes/snake-case/snake-case.pipe';
 import { CamelCasePipe } from './pipes/camel-case/camel-case.pipe';
+import { HtmlEscapePipe } from "./pipes/html-escape/html-escape.pipe";
+import { HtmlSanitizePipe } from "./pipes/html-sanitize/html-sanitize.pipe";
 
 
 @NgModule({
@@ -47,7 +49,9 @@ import { CamelCasePipe } from './pipes/camel-case/camel-case.pipe';
     TitleCasePipe,
     KebabCasePipe,
     SnakeCasePipe,
-    CamelCasePipe
+    CamelCasePipe,
+    HtmlEscapePipe,
+    HtmlSanitizePipe
   ],
   exports: [
     CountPipe,
@@ -71,7 +75,9 @@ import { CamelCasePipe } from './pipes/camel-case/camel-case.pipe';
     TitleCasePipe,
     KebabCasePipe,
     SnakeCasePipe,
-    CamelCasePipe
+    CamelCasePipe,
+    HtmlEscapePipe,
+    HtmlSanitizePipe
   ]
 })
 export class NgxPipeLibModule { }
