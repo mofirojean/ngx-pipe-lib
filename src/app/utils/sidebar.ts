@@ -20,6 +20,7 @@ import { ProfileInitialsComponent } from "../components/ui/profile-initials/prof
 import { ReverseWordComponent } from "../components/ui/reverse-word/reverse-word.component";
 import { AsciiArtGeneratorComponent } from "../components/ui/ascii-art-generator/ascii-art-generator.component";
 import { TextTransformComponent } from "../components/ui/text-transform/text-transform.component";
+import { SanitizeHtmlComponent } from "../components/ui/sanitize-html/sanitize-html.component";
 
 
 export const sidebarChildrenRoutes: Route[] = [
@@ -32,6 +33,11 @@ export const sidebarChildrenRoutes: Route[] = [
         path: 'color-picker',
         title: 'Color Picker Pipe',
         component: ColorPickerComponent, 
+    },
+    {
+        path: 'html-sanitize',
+        title: 'HTML Sanitize Pipe',
+        component: SanitizeHtmlComponent, 
     },
     {
         path: 'credit-card-mask',
@@ -152,6 +158,11 @@ export const sidebarItems: SidebarItem[] = [
     {
         link: '/pipes/credit-card-mask',
         name: 'Credit Card Mask', 
+    },
+    {
+        link: '/pipes/html-sanitize',
+        name: 'HTML Sanitiz',
+        isNew: true 
     },
     {
         link: '/pipes/barcode',
